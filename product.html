@@ -1,0 +1,142 @@
+<html>
+<head>
+	<title>Shopping list</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/progress-bar.css">
+	<link rel="stylesheet" href="css/checkbox.css">
+	<link rel="stylesheet" href="css/home.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/knockout-3.4.2.js"></script>
+	<script src="js/Proizvod.js"></script>
+	<script src="js/ViewModel.js"></script>
+
+</head>
+<body>
+<div id="overview">	
+	<div class="header">
+			<div class="col-md-3 col-sm-6">
+				<div class="progress blue" style="margin:0px">
+					<span class="progress-left">
+						<span class="progress-bar"></span>
+					</span>
+					<span class="progress-right">
+						<span class="progress-bar"></span>
+					</span>
+					<div class="progress-value"></div>
+				</div>
+			</div>
+			<span class="glyphicon glyphicon-menu-hamburger menu" aria-hidden="true"></span>
+	</div>
+
+	<div class="row product-line">
+		<div class="col-xs-6 prod">
+			<img src="images/product1.png" class="product-img">
+			<div class="col-xs-6">
+			<img src="images/organic.png" class="bedzevi-prod">
+		</div>
+	<div class="col-xs-6">
+			<img src="images/domace.png" class="bedzevi-prod">
+		</div>		
+		</div>
+		<div class="col-xs-6 prod">
+			<p><b>Marmelada Kajsija</b></p>
+		<p><b>Proizvođač:</b>Takovo</p>
+		<p><b>Količina: </b>700gr</p>
+		<p><b>Cena:</b> 249,99</p>
+		<p><b>Broj kalorija:</b> 46 kcal</b></p>		
+		<p><b>Proteini:</b> 10 gr</p>
+		<p><b>Ugljeni hidrati:</b> 7 gr</p>
+		<p><b>Masnoće:</b> 2 gr</p>	
+		</div>
+	</div>
+	<div class="product-origin">
+	<h1>Poreklo proizvoda</h1>
+	<h1>Sastojci</h1>
+	<h1>Recepti sa ovim proizvodom</h1>	
+	<div class="col-xs-6 prod">
+	<img src="images/recept1.jpg" class="recept">
+	</div>
+	<div class="col-xs-6 prod">
+	<img src="images/recept2.jpg" class="recept">
+	</div>
+		</div>
+	<div class="footer">
+		<span class="prikazi-cene">Prikazi cene</span>
+		<span class="ukupno">Ukupno: 698.48 din</span>
+	</div>
+</div>
+<div id="menu">
+
+</div> 
+<div id="profile">
+
+<div class="profile-img">
+		<img src="images/mama.png">
+		<div class="progressa blue" style="margin:0px">
+					<span class="progressa-left">
+						<span class="progressa-bar"></span>
+					</span>
+					<span class="progressa-right">
+						<span class="progressa-bar"></span>
+					</span>
+					<div class="progressa-value"></div>
+				</div>
+		<h1 class="profile-text1">Suzana Đuričić</h1>
+		<h2 class="profile-text">Super mama</h2>
+		<h2 class="profile-text"><b>Nivo 7</b></h2>
+	</div>
+<div class="coin-img">
+	<img src="images/coin.png">
+	<h2 class="profile-text">Novčići</h2>
+	<h2 class="profile-text"><b>340</b></h2>
+</div>
+
+<div class="lists-text">
+	<ul class="liste">
+		<li class="liste-predefined">Moja lista za kupovinu</li>
+		<li class="liste-predefined">Porodična lista</li>
+		<li class="liste-predefined">Pokloni</li>
+		<li class="liste-predefined">Zimnica</li>
+		<li class="liste-predefined">Žurka</li>
+
+
+	</ul>
+</div>
+
+</div>
+
+<script>
+
+
+
+	var VM = new ViewModel();
+	ko.applyBindings(VM, $('.content-wrapper')[0]);
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
